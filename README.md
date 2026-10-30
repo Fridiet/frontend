@@ -27,10 +27,10 @@ EXPO_PUBLIC_BASE_URL=<백엔드 서버 주소>
 ```bash
 cd frontend
 npm ci
-npm run web -- --port 8081
+npm run web
 ```
 
-실행 후 브라우저에서 <http://localhost:8081>로 접속합니다.
+실행 후 터미널에 표시되는 주소로 접속합니다. 기본 주소는 <http://localhost:8081>이며, 실행 환경에 따라 포트가 달라질 수 있습니다.
 
 Expo Go로 실행할 경우 다음 명령을 사용합니다.
 
