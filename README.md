@@ -1,15 +1,15 @@
-# 4. 실행 매뉴얼: 소스 코드 실행 환경 및 실행 방법
+# 실행 매뉴얼: 소스 코드 실행 환경 및 실행 방법
 
 ## 프론트엔드
 
-### 4.1 실행 환경
+### 1 실행 환경
 
 - Node.js 22.x
 - npm 10.x
 - Expo SDK 54
 - React Native 0.81.5
 
-### 4.2 환경변수 설정
+### 2 환경변수 설정
 
 `frontend/.env` 파일에 다음 값을 설정합니다.
 
@@ -20,7 +20,7 @@ EXPO_PUBLIC_REDIRECT_URI=fridiet://login-callback
 EXPO_PUBLIC_BASE_URL=<백엔드 서버 주소>
 ```
 
-### 4.3 실행 방법
+### 3 실행 방법
 
 프로젝트 루트에서 다음 명령을 실행합니다.
 
