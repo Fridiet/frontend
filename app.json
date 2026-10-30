@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "Fridiet",
+    "slug": "fridiet",
+    "owner": "ksr10",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "privacy": "hidden",
+    "icon": "./assets/fridiet/Fridiet.png",
+    "scheme": "fridiet",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.fridiet.app",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 3,
+      "googleServicesFile": "./google-services.json",
+      "edgeToEdgeEnabled": true,
+      "usesCleartextTraffic": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "package": "com.fridiet.app"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/fridiet/Fridiet.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "용기에 부착된 QR 코드를 인식하기 위해 카메라를 사용합니다.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "영수증이나 식사 사진을 촬영하기 위해 카메라를 사용합니다.",
+          "photosPermission": "저장된 영수증이나 식사 사진을 선택하기 위해 사진을 사용합니다.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/fridiet/Fridiet.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "87b116e4-d3e4-47d8-a176-d6ba27d0d2fd"
+      }
+    }
+  }
+}
